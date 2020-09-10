@@ -1,0 +1,22 @@
+{
+  "name": "rentrack",
+  "version": "1.0.0",
+  "description": "App for scraping and keeping track of apartments for rent in Sofia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vasil Tsvetanov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "expect-puppeteer": "^4.4.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "puppeteer": "^2.0.0",
+    "typeorm": "^0.2.25"
+  },
+  "devDependencies": {
+    "node-cron": "^2.0.3"
+  }
+}
