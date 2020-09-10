@@ -70,9 +70,9 @@ async function getOffers() {
 
 async function updateOffers(offers) {
     const connection = await getConnection();
+    const offersRepo = await connection.getRepository(Offer);
 
     // Remove all old offers from db.
-    const offersRepo = await connection.getRepository(Offer);
     const allOffers = await offersRepo.find();
     await offersRepo.remove(allOffers);
 
@@ -86,8 +86,7 @@ async function updateOffers(offers) {
         offer.link = _offer.link;
         offer.imageSrc = _offer.imageSrc;
 
-        const offerRepo = connection.getRepository(Offer);
-        await offerRepo.save(offer);
+        await offersRepo.save(offer);
     }
 
     connection.close();

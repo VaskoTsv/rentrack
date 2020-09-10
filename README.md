@@ -8,6 +8,13 @@ The project is splitted to cliend and server side.
 For the client side it is used simple **Html, Css and vanilla Javascript** without any bundlers.
 For the server side it is used **Node.js with Express** and **Puppeteer(for scraping)** + **Mysql db** and **Typeorm** for db connection/manipulation.
 
+# Run the project
+```
+npm install
+cd into server folder and run: node index.js
+open index.html in browser
+```
+
 # App preview
 ![alt text](./preview.png)
 
